@@ -29,5 +29,52 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/WickrInc/wickrio_web_interface"
+  },
+ "com_wickr" : {
+    "tokens" : [
+      {
+        "name" : "CLIENT_NAME",
+        "prompt" : "Please enter your client bot's username",
+        "description" : "Name of the WickrIO Bot client",
+        "type" : "string"
+      },
+      {
+        "name" : "LISTEN_PORT",
+        "prompt" : "Please enter your client bot's port",
+        "description" : "The TCP/IP port this integration will listen to",
+        "type" : "number"
+      },
+      {
+        "name" : "API_KEY",
+        "prompt": "Please enter your client bot's API-Key",
+        "description" : "The API key that is sent in every request",
+        "type" : "string"
+      },
+      {
+        "name" : "API_AUTH_TOKEN",
+        "prompt" : "Please create an Web API Basic Authorization Token(we recommend an alphanumeric string with at least 24 characters)",
+        "description" : "The authentication string used to generate the Base64 value to be sent in the authorization field of the HTTP Header",
+        "type" : "string"
+      },
+      {
+        "name" : "HTTPS_CHOICE",
+        "prompt" : "Do you want to set up an HTTPS connection with the Web API Interface (Recommended)(y/n)",
+        "description" : "Identifies if HTTPS is used.",
+        "type" : "string",
+        "range" : [ "y", "n" ]
+      },
+      {
+        "name" : "SSL_KEY_LOCATION",
+        "prompt" : "Please enter the name and location of your SSL .key file",
+        "description" : "Full path name of the .key file (only required if you are going to use HTTPS).",
+        "type" : "string"
+      },
+      {
+        "name" : "SSL_CRT_LOCATION",
+        "prompt" : "Please enter the name and location of your SSL .crt file",
+        "description" : "Full path name of the .cert file (only required if you are going to use HTTPS).",
+        "type" : "string"
+      }
+    ]
   }
 }
